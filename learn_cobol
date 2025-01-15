@@ -1,0 +1,96 @@
+
+ESTRUCTURA JERARQUICA DE UN PROGRAMA DE COBOLL
+
+PROGRAM{} 
+
+
+DIVISION{
+    DIVISIÓN DE IDENTIFICACIÓN(contiene información sobre el programa)
+        
+        IDENTIFICATION DIVISION.
+        PROGRAM-ID.
+        HolaMundo.
+        AUTHOR. NightLLama.
+        DATE-WRITTEN. 15th january 2025
+
+    DIVISIÓN DE ENTORNO(contiene información del entorno en el que trabaja el programa)
+    #esta información es útil por si se quiere ejecutar el programa en un hardware diferente
+        
+        SECTION CONFIGURATION
+        SECTION INPUT-OUTPUT
+    DIVISIÓN DE DATOS(contiene descripciones de datos)
+    DIVISIÓN DE PROCESAMIENTO(contiene los algoritmos del programa)
+}
+
+SECTION{
+    #sintaxis nombre SECTION.
+    #ejemplo de nombres de sección
+    SelectTexasRecords SECTION.
+    FILE SECTION.
+    CONFIGURATION SECTION.
+    INPUT-OUTPUT SECTION.
+}
+
+Paragrahp{
+    #ejemplo
+    DIVISIÓN DE MEDIO AMBIENTE
+
+    ENVIROMENT DIVISION.
+    INPUT-OUTPUT SECTION.
+    FILE-CONTROL. (paraffo)
+    SELECT EXAMPLEFILE. 
+    ORGANIZATION IS SEQUENTIAL.
+}
+
+Sentences
+
+Statement{ 
+
+    #Las declaraciones más importantes también conocidas como verbos en COBOL son:
+
+"""ARITMÉTICOS:
+COMPUTE
+ADD
+SUBTRACT
+MULTIPLY
+DIVIDE
+
+MANIPULACIÓN DE ARCHIVOS:
+OPEN
+CLOSE
+READ
+WRITE
+REWRITE
+SORT
+START
+DELETE
+RETURN 
+RELASE
+
+CONTROL DE FLUJO:
+IF
+EVALUATE 
+PERFORM
+GO TO
+CALL
+STOP RUN
+EXIT PROGRAM
+
+EJECUCIÓN:
+MOVE
+SET 
+INITIALIZEACCEPT
+DISPLAY
+
+MANIPULACIÓN DE TABLAS:
+SEARCH
+SEARCH ALL
+SET
+
+MANIPULACIÓN DE STRING:
+INSPECT
+STRING
+UNSTRING
+
+"""
+}
