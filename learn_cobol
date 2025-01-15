@@ -16,9 +16,43 @@ DIVISION{
     DIVISIÓN DE ENTORNO(contiene información del entorno en el que trabaja el programa)
     #esta información es útil por si se quiere ejecutar el programa en un hardware diferente
         
-        SECTION CONFIGURATION
-        SECTION INPUT-OUTPUT
+       CONFIGURATION SECTION.
+       
+       INPUT-OUTPUT SECTION.
+
+    #Ejemplo de CONFIGURATION SECTION.
+        IDENTIFICATION DIVISION.
+        
+        PROGRAM-ID. HolaMundo.
+        AUTHOR. NightLLama.
+        DATE-WRITTEN. 15th june 2023
+        
+        ENVIROMENT DIVISION.
+        
+        CONFIGURATION SECTION.
+        
+        SPECIAL-NAMES.
+        DECIMAL-POINT IS COMMA.
+        SYMBOLIC CHARACTERS 
+        ESC CR LF ARE 28 14 11.
+
+        INPUT-OUTPUT SECTION.
+        
+        FILE-CONTROL.
+        SELECT StockFile ASSIGN TO "direc" ORGANIZATION IS SEQUENTIAL.
+
+
     DIVISIÓN DE DATOS(contiene descripciones de datos)
+
+        FILE SECTION.
+
+        WORKING-STORAGE SECTION.
+
+        LINKAGE SECTION.
+
+        REPORT SECTION.
+        
+
     DIVISIÓN DE PROCESAMIENTO(contiene los algoritmos del programa)
 }
 
