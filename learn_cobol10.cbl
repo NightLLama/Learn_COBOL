@@ -1,0 +1,30 @@
+       IDENTIFICATION DIVISION.
+       PROGRAM-ID. LEARN-COBOL10.
+
+       ENVIRONMENT DIVISION.
+
+       DATA DIVISION.
+       WORKING-STORAGE SECTION.
+
+       01  DECISION PIC X(2).
+
+       PROCEDURE DIVISION.
+       PROGRAM-BEGIN.
+           PERFORM GET-THE-ANSWER.
+           PERFORM DISPLAY-THE-ANSWER.
+           PERFORM PROGRAM-DONE.
+           STOP RUN.
+
+       GET-THE-ANSWER.
+           DISPLAY "SI O NO?".
+           ACCEPT DECISION.
+
+       DISPLAY-THE-ANSWER.
+           IF DECISION = "NO"
+               DISPLAY "TU RESPUESTA ES NO."
+           ELSE
+               IF DECISION = "SI"
+                   DISPLAY "TU RESPUESTA ES SI".
+
+       PROGRAM-DONE.
+           DISPLAY "PROGRAMA FINALIZADO".

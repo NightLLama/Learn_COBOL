@@ -1,0 +1,29 @@
+       IDENTIFICATION DIVISION.
+       PROGRAM-ID. LEARN-COBOL11.
+
+       ENVIRONMENT DIVISION.
+
+       DATA DIVISION.
+       WORKING-STORAGE SECTION.
+
+       01  YES-OR-NO PIC X.
+
+
+       PROCEDURE DIVISION.
+       PROGRAM-BEGIN.
+           PERFORM GET-THE-ANSWER.
+           PERFORM EDIT-THE-ANSWER.
+           PERFORM FISPLAY-THE-ANSWER.
+
+       PROGRAM-DONE.
+           STOP RUN.
+       GET-THE-ANSWER.
+           DISPLAY "SI O NO?".
+           ACCEPT YES-OR-NO.
+       EDIT-THE-ANSWER.
+           IF YES-OR-NO = "S"
+               MOVE "S" TO YES-OR-NO.
+           IF YES-OR-NO = "N"
+               MOVE "N" TO YES-OR-NO.
+       DISPLAY-THE-ANSWER.
+           IF YES-OR-NO
