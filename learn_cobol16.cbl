@@ -1,0 +1,21 @@
+       IDENTIFICATION DIVISION.
+       PROGRAM-ID. "APRENDIENDO COBOL16".
+
+       ENVIRONMENT DIVISION.
+
+       DATA DIVISION.
+       WORKING-STORAGE SECTION.
+       01  SIG-NUM PIC S99.
+
+
+       PROCEDURE DIVISION.
+       INICIO.
+       MOVER.
+           MOVE -11 TO SIG-NUM.
+       ANADIR.
+           ADD 1 TO SIG-NUM.
+       IMPRIMIR.
+           DISPLAY SIG-NUM.
+
+       FIN.
+           STOP RUN.
