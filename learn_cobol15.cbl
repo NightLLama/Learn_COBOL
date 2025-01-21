@@ -1,0 +1,26 @@
+       IDENTIFICATION DIVISION.
+       PROGRAM-ID. "APRENDIENDO COBOL15".
+
+       ENVIRONMENT DIVISION.
+
+       DATA DIVISION.
+       WORKING-STORAGE SECTION.
+       01  FLOAT-1 PIC 99V99.
+       01  FLOAT-2 PIC 9V9(7).
+       01  FLOAT-3 PIC 9V99.
+
+       PROCEDURE DIVISION.
+       INICIO.
+       MOVER.
+           MOVE 10.03 TO FLOAT-1.
+           MOVE 3.1415926 TO FLOAT-2.
+       CALCULO.
+           COMPUTE FLOAT-3 = (5 + 6) / 4.
+       IMPRIMIR.
+           DISPLAY FLOAT-1.
+           DISPLAY FLOAT-2.
+           DISPLAY FLOAT-3.
+
+
+       FIN.
+           STOP RUN.
