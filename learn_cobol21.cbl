@@ -21,10 +21,11 @@
        INICIO.
            PERFORM COPY-PROCESS.
            PERFORM COPY-PROCESS.
+           STOP RUN.
        COPY-PROCESS.
            MOVE IN-DATA1 TO SAVE-REC1.
            MOVE IN-DATA2 TO SAVE-REC2.
            MOVE R-NUM TO S-NUM.
 
        FIN.
-           STOP RUN.
+           
