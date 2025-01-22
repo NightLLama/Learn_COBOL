@@ -1,0 +1,18 @@
+       IDENTIFICATION DIVISION.
+       PROGRAM-ID. "APRENDIENDO COBOL23".
+
+       ENVIRONMENT DIVISION.
+
+       DATA DIVISION.
+       WORKING-STORAGE SECTION.
+       01  TEST-AREA.
+           05 TEST-A PIC X(6).
+           05 TEST-B REDEFINES TEST-A PIC X(6).
+           05 TEST-C REDEFINES TEST-A PIC X(6).
+
+       PROCEDURE DIVISION.
+       INICIO.
+           MOVE "TEST A" TO TEST-A.
+           DISPLAY TEST-A, " ", TEST-B, " ", TEST-C.
+       FIN.
+           STOP RUN.

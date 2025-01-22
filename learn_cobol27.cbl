@@ -1,0 +1,23 @@
+       IDENTIFICATION DIVISION.
+       PROGRAM-ID. "APRENDIENDO COBOL27".
+
+       ENVIRONMENT DIVISION.
+
+       DATA DIVISION.
+       WORKING-STORAGE SECTION.
+       01  FULL-NAME PIC X(20) VALUE "ELIAS PEREZ".
+       01  FIRST-NAME PIC X(10).
+       01  LAST-NAME PIC X(10).
+
+       PROCEDURE DIVISION.
+       INICIO.
+           UNSTRING
+           FULL-NAME DELIMITED BY SPACE
+           INTO
+           FIRST-NAME
+           LAST-NAME
+           END-UNSTRING.
+           DISPLAY FIRST-NAME.
+           DISPLAY LAST-NAME.
+       FIN.
+           STOP RUN.
