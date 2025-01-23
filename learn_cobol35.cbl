@@ -1,0 +1,28 @@
+       IDENTIFICATION DIVISION.
+       PROGRAM-ID. "APRENDIENDO COBOL35".
+
+       ENVIRONMENT DIVISION.
+
+       DATA DIVISION.
+       WORKING-STORAGE SECTION.
+       01  FECHA PIC X(10).
+       01  ANO PIC X(4).
+       01  MES PIC XX.
+       01  DIA PIC XX.
+
+       PROCEDURE DIVISION.
+       INICIO.
+      *VARIABLE (START: LENGTH) SI NO SE ESPECIFICA LA LONGITUD
+      *SERA VARIABLE(START:)
+           MOVE "2022/05/12" TO FECHA.
+           MOVE FECHA (1:4) TO ANO.
+           MOVE FECHA (6:2) TO MES.
+           MOVE FECHA (9:2) TO DIA.
+
+       IMPRIMIR.
+           DISPLAY FECHA.
+           DISPLAY ANO.
+           DISPLAY MES.
+           DISPLAY DIA.
+       FIN.
+           STOP RUN.

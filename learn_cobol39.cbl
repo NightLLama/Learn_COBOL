@@ -1,0 +1,18 @@
+       IDENTIFICATION DIVISION.
+       PROGRAM-ID. "APRENDIENDO COBOL39".
+
+       ENVIRONMENT DIVISION.
+
+       DATA DIVISION.
+       WORKING-STORAGE SECTION.
+       01 NUM1 PIC 9V99 VALUE 1.25.
+       01 NUM2 PIC 9V99 VALUE 2.36.
+       01 RESULT PIC 9V99.
+       01 RESULT-ROUNDED PIC 9V9.
+
+       PROCEDURE DIVISION.
+               COMPUTE RESULT = NUM1 + NUM2.
+               DISPLAY 'Resultado sin redondeo: ' RESULT.
+               COMPUTE RESULT-ROUNDED ROUNDED = NUM1 + NUM2.
+               DISPLAY 'Resultado con redondeo: ' RESULT-ROUNDED.
+       STOP RUN.
