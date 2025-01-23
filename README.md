@@ -11,7 +11,7 @@ si quieres ayudar, eres libre de dejar tus anotaciones o modificaciones.
 
 MUCHAS GRACIAS!.
 
-Estructura del Proyecto:
+Estructura del Repositorio:
 
 */bin*: Contiene los archivos binarios generados después de la compilación.
 */docs*: Documentación y recursos adicionales.
