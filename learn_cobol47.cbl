@@ -21,4 +21,6 @@
            DISPLAY "CONTINUAR (Y/N)?".
            ACCEPT SI-O-NO.
            IF SI-O-NO = "n"
-               MOVE ""
+               MOVE "N" TO SI-O-NO.
+       LOGICA-PRINCIPAL.
+           DISPLAY "LOGICA PRINCIPAL".
