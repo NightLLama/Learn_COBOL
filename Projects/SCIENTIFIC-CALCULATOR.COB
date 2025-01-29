@@ -1,10 +1,8 @@
       ******************************************************************
-      *Desarrolla una calculadora básica.
-      *
-      *
+      * MI CALCULADORA CIENTIFICA
       ******************************************************************
        IDENTIFICATION DIVISION.
-       PROGRAM-ID. EXERCISE5.
+       PROGRAM-ID. SCIENTIFIC-CALCULATOR.
 
        ENVIRONMENT DIVISION.
 

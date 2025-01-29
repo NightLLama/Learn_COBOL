@@ -1,5 +1,5 @@
       ******************************************************************
-      *Desarrolla una calculadora básica.
+      *Desarrolla una calculadora bï¿½sica.
       *
       *
       ******************************************************************
@@ -22,11 +22,11 @@
            DISPLAY "INGRESE OTRO VALOR: ".
            ACCEPT NUM2.
        CALCULO.
-           DISPLAY "SELECCIONAR OPERACIÓN!"
+           DISPLAY "SELECCIONAR OPERACIï¿½N!"
            DISPLAY "1) SUMA"
            DISPLAY "2) RESTA"
-           DISPLAY "3) DIVISIÓN"
-           DISPLAY "4) MULTIPLICACIÓN"
+           DISPLAY "3) DIVISIï¿½N"
+           DISPLAY "4) MULTIPLICACIï¿½N"
            ACCEPT OPCION.
            EVALUATE OPCION
                WHEN  1
