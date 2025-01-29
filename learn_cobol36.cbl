@@ -27,7 +27,7 @@
                DISPLAY "VERDADERO"
            ELSE
                DISPLAY "FALSO"
-           END-IF
+           END-IF.
 
 
 
