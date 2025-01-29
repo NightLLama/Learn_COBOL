@@ -15,6 +15,7 @@ Estructura del Repositorio:
 
 */bin*: Contiene los archivos binarios generados después de la compilación.
 */docs*: Documentación y recursos adicionales.
+*/exercises*: Contiene ejercicios adicionales.
 
 Requisitos:
 
