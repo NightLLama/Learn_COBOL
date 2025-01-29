@@ -13,11 +13,11 @@ MUCHAS GRACIAS!.
 
 Estructura del Repositorio:
 
-*/bin*: Contiene los archivos binarios generados después de la compilación.
-*/docs*: Documentación y recursos adicionales.
-*/exercises*: Contiene ejercicios adicionales.
-*/Projects*: Contiene mis projectos.
-*/DB2*: Ejercicios y ejemplos relacionados al sistema de gestión de bases de datos desarrollado por IBM.
+/bin: Contiene los archivos binarios generados después de la compilación.
+/docs: Documentación y recursos adicionales.
+/exercises: Contiene ejercicios adicionales.
+/Projects: Contiene mis projectos.
+/DB2: Ejercicios y ejemplos relacionados al sistema de gestión de bases de datos desarrollado por IBM.
 
 Requisitos:
 
